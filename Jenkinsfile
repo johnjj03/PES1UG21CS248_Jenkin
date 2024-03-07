@@ -14,7 +14,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'g++ -o hello ./main/hello.cp'
+                sh 'g++ -o hello ./main/hello.cpp'
             }
         }
 
@@ -26,7 +26,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo "Deploying..."
+                ech "Deploying..."
             }
         }
     }
